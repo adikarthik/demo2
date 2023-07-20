@@ -5,7 +5,7 @@ pipeline{
 }
 stages {
   stage('install') {
-    steps { git branch: 'main', url: 'https://github.com/MedhaJoshi2019/b6-java.git'
+    steps { git branch: 'master', url: 'https://github.com/MedhaJoshi2019/demo2/blob/master/'
         
       sh 'mvn install'
     }
@@ -26,7 +26,7 @@ stages {
   }
 
   stage('clean install') {
-    steps { git branch: 'main', url: 'https://github.com/MedhaJoshi2019/b6-java.git'
+    steps { git branch: 'main', url: 'https://github.com/MedhaJoshi2019/demo2/blob/master/'
      sh 'mvn clean install'
     }
 
